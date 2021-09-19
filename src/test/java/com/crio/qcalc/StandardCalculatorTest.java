@@ -12,6 +12,10 @@ public class StandardCalculatorTest {
     void setup(){
         standardCalculator = new StandardCalculator();
     }
+
+
+
+
     @Test
     @DisplayName("Test Addition of Two Integers")
     void testAdditionOperation(){
@@ -27,9 +31,6 @@ public class StandardCalculatorTest {
         int actualResult = standardCalculator.getResult();
         Assertions.assertEquals(0, actualResult);
     }
-
-
-    
 
 
 }
