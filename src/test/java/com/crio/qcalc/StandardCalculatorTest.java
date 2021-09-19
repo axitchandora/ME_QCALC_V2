@@ -12,22 +12,6 @@ public class StandardCalculatorTest {
     void setup(){
         standardCalculator = new StandardCalculator();
     }
-    @Test
-    @DisplayName("Test Addition of Two Integers")
-    void testAdditionOperation(){
-        standardCalculator.add(1,1);
-        double actualResult = standardCalculator.getResult();
-        Assertions.assertEquals(2, actualResult);
-    }
-
-    @Test
-    @DisplayName("Test Substraction of Two Integers")
-    void testSubtractionOperation(){
-        standardCalculator.subtract(1,1);
-        double actualResult = standardCalculator.getResult();
-        Assertions.assertEquals(0, actualResult);
-    }
-
 
     @Test
     @DisplayName("Test Addition of Two Doubles")
@@ -44,8 +28,20 @@ public class StandardCalculatorTest {
         double actualResult = standardCalculator.getResult();
         Assertions.assertEquals(-10.5, actualResult);
     }
-
     
+    @Test
+    @DisplayName("Test Addition of Two Integers")
+    void testAdditionOperation(){
+        standardCalculator.add(1,1);
+        double actualResult = standardCalculator.getResult();
+        Assertions.assertEquals(2, actualResult);
+    }
 
-
+    @Test
+    @DisplayName("Test Substraction of Two Integers")
+    void testSubtractionOperation(){
+        standardCalculator.subtract(1,1);
+        double actualResult = standardCalculator.getResult();
+        Assertions.assertEquals(0, actualResult);
+    }
 }
