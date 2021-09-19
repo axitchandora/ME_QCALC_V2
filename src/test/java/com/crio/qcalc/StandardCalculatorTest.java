@@ -15,25 +15,17 @@ public class StandardCalculatorTest {
     @Test
     @DisplayName("Test Addition of Two Integers")
     void testAdditionOperation(){
-        //Arrange
-        int expectedResult = 2;
-        //Act
         standardCalculator.add(1,1);
         int actualResult = standardCalculator.getResult();
-        //Assert
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(2,actualResult);
     }
 
     @Test
     @DisplayName("Test Substraction of Two Integers")
     void testSubtractionOperation(){
-        //Arrange
-        int expectedResult = 0;
-        //Act
         standardCalculator.subtract(1,1);
         int actualResult = standardCalculator.getResult();
-        //Assert
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(0, actualResult);
     }
 
     
