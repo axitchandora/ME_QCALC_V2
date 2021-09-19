@@ -12,6 +12,7 @@ public class StandardCalculatorTest {
     void setup(){
         standardCalculator = new StandardCalculator();
     }
+
     @Test
     @DisplayName("Test Addition of Two Integers")
     void testAdditionOperation(){
@@ -37,7 +38,7 @@ public class StandardCalculatorTest {
     }
 
 
-    
+
 
 
 }
