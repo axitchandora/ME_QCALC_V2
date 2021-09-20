@@ -20,6 +20,6 @@ public class LogicCalculator extends StandardCalculator{
 
     @Override
     public void printResult(){
-        System.out.println("Logic Calculator Result:"+ result);
+        System.out.println("Logic Calculator Result:"+ result );
     }
 }
