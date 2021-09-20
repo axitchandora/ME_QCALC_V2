@@ -6,15 +6,20 @@ public class LogicCalculator extends StandardCalculator{
         System.out.println("Logic Calculator 1.0");
     }
     public void AND(int num1, int num2){
-        setResult(num1 | num2);
+        result = num1 | num2;
     }
     public void OR(int num1){
-        setResult(num1 | num2);
+        result = num1 | num2;
     }
     public void XOR(int num1, int num2){
-        setResult(num1 ^ num2);
+        result = num1 ^ num2;
     }
     public void NOT(int num1){
-        setResult(~num1);
+        result = ~num1;
+    }
+
+    @Override
+    public void printResult(){
+        System.out.println("Logic Calculator Result:"+ result);
     }
 }
