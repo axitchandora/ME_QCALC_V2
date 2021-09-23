@@ -14,6 +14,7 @@ public class StandardCalculatorTest {
         standardCalculator = new StandardCalculator();
     }
 
+    @Test
     @DisplayName("Test Multiplication Overflow of Two Doubles")
     void testMultiplicationOverflowForDoubles(){
         //Assert
@@ -24,6 +25,7 @@ public class StandardCalculatorTest {
             }
         });
     }
+    @Test
     @DisplayName("Test Multiplication Overflow of Two Doubles in which One is Positive and Other is Negative")
     void testMultiplicationOverflowForDoublesOnePosOtherNeg(){
         //Assert
