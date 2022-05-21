@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 
 public class ScientificCalculatorTest {
@@ -96,4 +97,14 @@ public class ScientificCalculatorTest {
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
+    @DisplayName("Test Square Overflow")
+    void testSquareOverflow(){
+        //Assert
+        Assertions.assertThrows(ArithmeticException.class,new Executable(){
+            @Override
+            public void execute() throws Throwable{
+                scientificCalculator.square(Double.MAX_VALUE);
+            }
+        });
+    }
 }
